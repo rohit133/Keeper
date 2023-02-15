@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "./Header";
-import ContentBody from "./ContentBody";
+import Notes from "./Notes";
 import Footer from "./Footer";
+
+
 //2. Create a App.jsx component.
 function App() {
   return (
     <div>
       <Header />
-      <ContentBody />
+      <Notes />
       <Footer />
     </div>
   );
 }
-
 export default App;
