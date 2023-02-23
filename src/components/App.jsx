@@ -8,14 +8,14 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
-    setNotes((prevValue) => {
-      return [...prevValue, newNote];
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote];
     });
   }
 
   function deleteNote(id) {
-    setNotes((prevValue) => {
-      return prevValue.filter((noteItem, index) => {
+    setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => {
         return index !== id;
       });
     });
@@ -36,7 +36,6 @@ function App() {
           />
         );
       })}
-
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import HighlightIcon from '@mui/icons-material/Highlight';
 
 
 // Create a Header.jsx component that renders a <header> element
@@ -7,7 +8,7 @@ import React from "react";
 function Header() {
   return (
     <header className="header">
-      <h1 className="header h1">Keeper</h1>
+      <h1 className="header h1"><HighlightIcon/> Keeper</h1>
     </header>
   );
 }
